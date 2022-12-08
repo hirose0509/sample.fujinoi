@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ご予約・お問い合わせ | 日本橋 藤乃井</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/reserve.css">
+    <link rel="icon" href="../favicon.ico">
+    <script src="../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/reserve.js"></script>
+</head>
+<!-- RESERVE -->
+
+<body>
+    <!-- background -->
+    <div class="bg_red">
+    </div>
+
+    <!-- main_nav -->
+    <div class="h_btn"><span></span><span></span><span></span></div>
+    <nav class="main_nav">
+        <ul class="ds_f jc_sb">
+            <li class="home">
+                <a href="../index.html"><img src="../assets/images/common/nav_logo.svg" alt="ホーム"></a>
+            </li>
+            <li><a href="#" class="line">藤乃井について</a></li>
+            <li><a href="../menu/index.html" class="line">お品書き</a></li>
+            <li><a href="../takeout/index.html" class="line">テイクアウト・お取り寄せ</a></li>
+            <li><a href="#" class="line">ブログ</a></li>
+            <li class="yoyaku"><a href="#"><span>ご予約・お問い合わせ</span></a></li>
+        </ul>
+    </nav>
+
+
+    <!-- header -->
+    <header>
+        <div class="main_v">
+            <img src="../assets/images/reserve/reserve_v.jpg" alt="ご予約・お問い合わせ">
+        </div>
+        <!-- headerここまで -->
+    </header>
+
+    <!-- main -->
+    <main>
+
+        <!-- tab_box -->
+        <div class="main_inner tab_inner">
+            <div class="tab_box ds_f">
+                <div class="tab active">
+                    <p>ご予約</p>
+                </div>
+                <div class="tab">
+                    <p>お問い合わせ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_box">
+            <!-- reserve -->
+            <div class="box active">
+                <div class="main_inner">
+                    <section class="reserve">
+                        <div class="circle ds_f"></div>
+                        <h2>ご予約<span>Reserve</span></h2>
+                        <p class="reserve_text">
+                            ご予約はお電話または予約フォームより受付けております。<br>
+                            尚、当店では<a href="#">予約規定</a>を設けております。<br>
+                            内容をご確認・ご同意いただいたうえでご予約いただきますようお願い申し上げます。
+                        </p>
+
+                        <!-- net_yoyaku -->
+                        <div class="net_yoyaku">
+                            <h3>ネットでのご予約</h3>
+                            <div class="net_yoyaku_btn">
+                                <a href="#">ご予約はこちら</a>
+                            </div>
+                            <p>
+                                <span>上記リンクよりお客様の情報を入力し、ご予約をお願いいたします。</span>
+                                <br>
+                                ネット予約で満席の場合も、人数によりお電話で予約可能な場合がございます<br>
+                                5名様以上、またはお子様用メニューをご希望の場合はお電話での予約をお願いいたします
+                            </p>
+                        </div>
+
+                        <!-- tel_yoyaku -->
+                        <div class="tel_yoyaku">
+                            <h3>お電話でのご予約</h3>
+                            <div class="tel_yoyaku_btn">
+                                <a href="#">03-123-4566</a>
+                            </div>
+                            <p>
+                                営業時間中のみご対応させていただきます。<br>
+                                また、予約確定後に内容の変更やキャンセルをされる場合は、必ずお電話にてご連絡ください。
+                            </p>
+                        </div>
+
+                        <!-- fujinoi_info -->
+                        <div class="fujinoi_info ds_f jc_sb">
+                            <div class="info_text">
+                                <p class="i_name">日本橋<span>藤乃井</span></p>
+                                <p class="i_address">〒103-0013<br>
+                                    東京都中央区日本橋人形町2-134-5
+                                </p>
+                                <p class="i_tel">03-123-4566 [11:30-21:00 | 年中無休]</p>
+                                <div class="i_about_btn">
+                                    <a href="#">
+                                        <p>藤乃井について<span class="yazirusi"></span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="i_image">
+                                <img src="../assets/images/reserve/gaikan.jpg" alt="日本橋藤乃井">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- contact -->
+            <div class="box">
+                <div class="contact_bg">
+                    <div class="main_inner">
+                        <section class="contact">
+                            <div class="circle ds_f"></div>
+                            <h2>お問い合わせ<span>Reserve</span></h2>
+                            <p class="contact_text">
+                                お問い合わせ内容を選択の上、下記項目にご入力をお願いいたします。（＊は必須項目です）
+                            </p>
+                            <form id="form">
+                                <div class="naiyo_btn ds_f">
+                                    <div>
+                                        <input type="radio" id="radio1" name="naiyo_btn" value="ご予約について">
+                                        <label for="radio1">ご予約について</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="radio2" name="naiyo_btn" value="お料理について">
+                                        <label for="radio2">お料理について</label>
+                                    </div>
+                                    <div class="end">
+                                        <input type="radio" id="radio3" name="naiyo_btn" value="３その他のお問い合わせ">
+                                        <label for="radio3">その他のお問い合わせ</label>
+                                    </div>
+                                </div>
+                                <div class="name">
+                                    <label for="name">お名前<span>*</span></label>
+                                    <input type="text" id="name" name="name_er">
+                                </div>
+                                <div class=" address">
+                                    <label for="address">ご住所</label>
+                                    <input type="text" id="address" name="address">
+                                </div>
+                                <div class="ds_f jc_sb">
+                                    <div class="phone">
+                                        <label for="phone">電話番号</label>
+                                        <input type="text" id="phone" name="phone">
+                                    </div>
+                                    <div class="email">
+                                        <label for="email" id="email_er">メールアドレス<span>*</span></label>
+                                        <input type="text" id="email" name="email_er">
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="content-label">
+                                        <label for="content" id="content_er">お問い合わせ内容<span>*</span></label>
+                                    </div>
+                                    <textarea id="content" name="content_er"></textarea>
+                                </div>
+                                <div class="submit_button">
+                                    <input type="submit" value="送信する">
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mainここまで -->
+    </main>
+
+    <!-- footer -->
+    <footer>
+
+        <!--f_inner -->
+        <div class="f_inner ds_f jc_sb">
+            <!-- restaurant_info -->
+            <div class="restaurant_info ds_f jc_sb">
+                <div class="f_logo">
+                    <a href="../index.html"><img src="../assets/images/common/logo_tate.svg" alt="日本橋 藤乃井"
+                            class="pc"></a>
+                    <a href="../index.html"><img src="../assets/images/common/logo_yoko.svg" alt="日本橋 藤乃井"
+                            class="sp"></a>
+                </div>
+                <div class="info_box">
+                    <p>〒103-0013東京都中央区日本橋人形町2-134-5</p>
+                    <div class="c_address">
+                        <p class="tel">03-123-4566</p>
+                        <p class="mail">contact@fujinoi.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- f_nav -->
+            <ul class="f_nav ds_f jc_sb">
+                <li><a href="#">藤乃井について</a></li>
+                <li><a href="menu/index.html">お品書き</a></li>
+                <li><a href="takeout/index.html">テイクアウト・お取り寄せ</a></li>
+                <li><a href="#">ブログ</a></li>
+                <li><a href="reserve/index.html">ご予約・お問い合わせ</a></li>
+            </ul>
+        </div>
+
+        <!-- copyrights -->
+        <small>&copy; All Rights Reserved, Fujinoi Co.,Ltd </small>
+
+        <!-- toTop_btn -->
+        <div id="toTop">
+            <a href="#"><img src="../assets/images/common/totop.svg" alt="トップへ戻る"></a>
+        </div>
+
+        <!-- footerここまで -->
+    </footer>
+
+</body>
+
+</html>

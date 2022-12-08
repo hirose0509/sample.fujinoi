@@ -1,0 +1,1071 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+
+/* -----reserve.css----- */
+
+/* リセットcss */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+/* 共通css */
+.ds_f {
+    display: flex;
+}
+
+.jc_sb {
+    justify-content: space-between;
+}
+
+body {
+    width: 100vw;
+    background-image: url(../images/common/bg_image.gif);
+    background-repeat: repeat;
+    margin: 0 auto;
+    font-family: "Noto Serif JP", "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    color: #514d43;
+    overflow-x: hidden;
+}
+
+/* background */
+.bg_red {
+    position: absolute;
+    z-index: -10000;
+    background: linear-gradient(rgba(200, 92, 49, .6), rgba(0, 0, 0, 0));
+    width: 100vw;
+    height: 1460px;
+}
+
+/* main_nav */
+.main_nav {
+    width: 100vw;
+    height: 90px;
+    margin: 0;
+    position: absolute;
+    z-index: 9999999999;
+}
+
+.main_nav.fixed {
+    position: fixed;
+    z-index: 9999999999;
+}
+
+/* header */
+header {
+    margin-bottom: 85px;
+}
+
+/* main_v */
+.main_v {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+.main_v img {
+    width: 100%;
+    height: 526px;
+    object-fit: cover;
+}
+
+/* main */
+
+main {
+    width: 100%;
+}
+
+.main_inner {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+/* tab_box */
+.tab_box {
+    width: 1006px;
+    height: 66px;
+    margin: 0 auto;
+    justify-content: center;
+    border-bottom: 1px solid #514d43;
+}
+
+.tab {
+    width: 503px;
+    height: 66px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.tab p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 66px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab.active {
+    width: 503px;
+    height: 66px;
+    position: relative;
+    z-index: 0;
+    background-color: #514d43;
+    cursor: pointer;
+}
+
+.tab.active p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #f7f2e8;
+    cursor: pointer;
+}
+
+/* resere */
+.reserve {
+    width: 1006px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 60px 0 170px;
+    position: relative;
+}
+
+.circle {
+    width: 47px;
+    height: 47px;
+    background-color: #e2471d;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0px;
+    left: 479.5px;
+}
+
+.reserve h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.reserve h2 span {
+    display: block;
+    font-size: 0.875rem;
+}
+
+.reserve_text {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 0 90px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #514d43;
+}
+
+.reserve_text a {
+    text-decoration: none;
+    color: #514d43;
+    font-weight: 600;
+}
+
+.reserve_text a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+/* net_yoyaku */
+.net_yoyaku {
+    padding: 55px 90px;
+}
+
+.net_yoyaku::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1006px;
+    border-bottom: 2px solid #514d43;
+    margin: 0 auto;
+    left: 0;
+}
+
+.net_yoyaku_btn {
+    margin-bottom: 50px;
+}
+
+.net_yoyaku_btn a {
+    display: block;
+    width: 402px;
+    height: 64px;
+    background-color: #514d43;
+    border-radius: 60px;
+    color: #f7f2e8;
+    font-size: 1.375rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 64px;
+    text-decoration: none;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.net_yoyaku_btn a:hover {
+    background-color: rgba(200, 92, 49, .6);
+    transition: 0.5s;
+}
+
+.net_yoyaku p {
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.8em;
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+.net_yoyaku p span {
+    font-size: 0.9375rem;
+    line-height: 4em;
+}
+
+/* tel_yoyaku */
+.tel_yoyaku {
+    padding-bottom: 55px;
+    margin: 0 90px;
+    border-bottom: 1px solid #514d43;
+}
+
+.tel_yoyaku_btn {
+    margin-bottom: 50px;
+}
+
+.tel_yoyaku_btn a {
+    display: block;
+    width: 402px;
+    height: 64px;
+    background-color: #514d43;
+    border-radius: 60px;
+    color: #f7f2e8;
+    font-size: 1.375rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 64px;
+    text-decoration: none;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.tel_yoyaku_btn a::before {
+    display: inline-block;
+    width: 27px;
+    height: 22px;
+    vertical-align: -1px;
+    padding-right: 5px;
+    content: url(../images/reserve/tel_image.svg);
+}
+
+.tel_yoyaku_btn a:hover {
+    background-color: rgba(200, 92, 49, .6);
+    transition: 0.5s;
+}
+
+.tel_yoyaku p {
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.8em;
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+/* fujinoi_info */
+
+.fujinoi_info {
+    padding-top: 116px;
+}
+
+.info_text {
+    width: 432px;
+}
+
+.i_name {
+    font-size: 1rem;
+    font-weight: 700;
+    border-bottom: 2px solid #514d43;
+    padding-bottom: 5px;
+}
+
+.i_name span {
+    font-size: 1.875rem;
+    padding-left: 10px;
+}
+
+.i_address {
+    font-weight: 600;
+    padding: 10px 0 50px 0;
+}
+
+.i_tel {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.i_tel::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 15px;
+    background-image: url(../images/common/info_tel_icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 5px;
+}
+
+.i_about_btn {
+    width: 355px;
+    background-color: #514d43;
+}
+
+.i_about_btn a {
+    display: block;
+    text-decoration: none;
+    color: #ede5d1;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 22px 0;
+    transition: 0.2s;
+}
+
+.i_about_btn .yazirusi {
+    padding-left: 20px;
+}
+
+.i_about_btn .yazirusi::after {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 6px;
+    border-bottom: solid 2px;
+    border-right: solid 2px;
+    transform: skew(45deg);
+    margin-bottom: 3px;
+}
+
+.i_about_btn a:hover {
+    color: #514d43;
+    background-color: #e9d6b1;
+    transition: 0.5s;
+}
+
+/* contact */
+.contact_bg {
+    margin: 0 -500%;
+    padding: 0 500%;
+    background-color: rgba(220, 200, 170, 0.4);
+    box-shadow: 0 0 40px rgb(220 200 170 / 80%);
+}
+
+.contact {
+    width: 1006px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 60px 0 230px;
+    position: relative;
+}
+
+.contact h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact h2 span {
+    display: block;
+    font-size: 0.875rem;
+}
+
+.contact_text {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 0 90px 72px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #514d43;
+}
+
+/* form */
+#form {
+    font-size: 0.9375rem;
+    font-weight: 600;
+}
+
+/* naiyo_btn */
+.naiyo_btn {
+    justify-content: end;
+    text-align: right;
+    padding-bottom: 75px;
+}
+
+
+.naiyo_btn label {
+    display: inline-block;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    padding-right: 75px;
+}
+
+.naiyo_btn .end label {
+    margin-right: 35px;
+}
+
+/* name */
+.name {
+    width: 490px;
+    padding-bottom: 35px;
+}
+
+.name label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.name input {
+    display: block;
+    width: 490px;
+    height: 54px;
+    border: none;
+    background-color: #ede5d1;
+}
+
+/* address */
+.address {
+    width: 922px;
+    padding-bottom: 35px;
+}
+
+.address label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.address input {
+    display: block;
+    width: 922px;
+    height: 54px;
+    border: none;
+    background-color: #ede5d1;
+}
+
+/* phone */
+.phone {
+    width: 472px;
+    padding-bottom: 35px;
+}
+
+.phone label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.phone input {
+    display: block;
+    width: 472px;
+    height: 54px;
+    border: none;
+    background-color: #ede5d1;
+}
+
+/* email */
+.email {
+    width: 472px;
+    padding-bottom: 35px;
+}
+
+.email label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.email input {
+    display: block;
+    width: 472px;
+    height: 54px;
+    border: none;
+    background-color: #ede5d1;
+}
+
+/* content */
+.content {
+    width: 1006px;
+    padding-bottom: 38px;
+}
+
+.content label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.content textarea {
+    display: block;
+    width: 1006px;
+    height: 386px;
+    border: none;
+    background-color: #ede5d1;
+}
+
+/* submit_button */
+.submit_button input {
+    display: block;
+    width: 195px;
+    height: 52px;
+    border: none;
+    color: #ede5d1;
+    font-family: "Noto Serif JP", "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #514d43;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+
+.submit_button input:hover {
+    color: #514d43;
+    background-color: rgba(247, 242, 232, .8);
+    transition: 0.5s;
+}
+
+/* 装飾等 */
+label span {
+    display: inline-block;
+    color: #e2471d;
+    font-weight: 800;
+    padding-left: 5px;
+}
+
+#name-error {
+    color: #e2471d;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+#email-error {
+    color: #e2471d;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+#content-error {
+    color: #e2471d;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* footer */
+.f_inner {
+    margin-top: 0;
+    padding-top: 65px;
+}
+
+
+/* 表示・非表示 */
+.box.active {
+    display: block;
+}
+
+.box{
+    display: none;
+}
+
+.footer_area {
+    display: none;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* レスポンシブ */
+@media screen and (min-width:641px) {
+    .footer_area {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .ds_f {
+        flex-direction: column;
+    }
+
+    .f_nav {
+        display: none;
+    }
+
+    /* 幅リセット */
+
+    /* header */
+    header {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* main */
+
+    /* tab_box */
+
+    .tab_inner{
+        width:100%;
+        margin: 0 auto;
+        padding: 60px 45px 0;
+        box-sizing: border-box;
+    }
+
+    .tab_box{
+        width:100%;
+        flex-direction: row;
+        margin:0 auto;
+        border: 1px solid #514d43;
+    }
+
+    .tab{
+        width:100%;
+    }
+
+    .tab.active{
+        width:100%;
+    }
+
+    /* reserve */
+    .reserve {
+        padding: 0;
+        margin-top:0;
+    }
+
+    .reserve_text {
+        margin: 0;
+    }
+
+    .net_yoyaku {
+        padding: 0;
+    }
+
+    .tel_yoyaku {
+        margin: 0;
+    }
+
+    /* contact */
+
+    .contact{
+        margin-top:0;
+    }
+
+    .contact_bg {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact_text {
+        margin: 0;
+    }
+
+    .naiyo_btn label {
+        padding: 0
+    }
+
+    .naiyo_btn .end label {
+        margin: 0;
+    }
+
+
+    /* footer */
+    .f_inner {
+        margin: 0;
+    }
+
+    .f_logo {
+        margin: 0;
+    }
+
+    .restaurant_info .info_box {
+        margin: 0;
+        padding: 0;
+    }
+
+    .info_box .c_address {
+        margin: 0;
+    }
+
+    footer small {
+        padding: 0;
+    }
+
+    /* 調整 */
+    body {
+        width: 100vw;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* hedaer */
+    .bg_red {
+        width: 100vw;
+        height: 880px;
+    }
+
+    header {
+        width: 100vw;
+        height: 50%;
+        box-sizing: border-box;
+    }
+
+    .main_v {
+        height: 50%;
+    }
+
+    .main_v img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    /* main_nav */
+    .main_nav {
+        position: fixed;
+        z-index: 200000;
+        top: -150%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #f7f2e8;
+        transition: all 0.8s;
+    }
+
+    .main_nav.panelactive {
+        top: 0;
+    }
+
+    .main_nav ul {
+        position: absolute;
+        z-index: 200000;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        flex-direction: column;
+    }
+
+    .main_nav li {
+        height: 90px;
+        list-style: none;
+        text-align: center;
+    }
+
+    .main_nav li a {
+        color: #514d43;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+    }
+
+    .main_nav .home {
+        height: 90px;
+        position: absolute;
+        z-index: 200000;
+        top: -110%;
+        left: 43%;
+    }
+
+    /*ボタン*/
+    .h_btn {
+        position: fixed;
+        z-index: 300000;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        display: block;
+    }
+
+    /*×に変化*/
+    .h_btn span {
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #e2471d;
+        width: 45%;
+    }
+
+    .h_btn span:nth-of-type(1) {
+        top: 15px;
+    }
+
+    .h_btn span:nth-of-type(2) {
+        top: 23px;
+    }
+
+    .h_btn span:nth-of-type(3) {
+        top: 31px;
+    }
+
+    .h_btn.active span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+
+    .h_btn.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .h_btn.active span:nth-of-type(3) {
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+
+    /* main */
+    main {
+        width: 100%;
+    }
+
+    .main_inner {
+        width: 100%;
+    }
+
+    /* reserve */
+    .reserve {
+        width: 100%;
+        padding: 70px 45px;
+        box-sizing: border-box;
+    }
+
+    .reserve_text {
+        font-size: 0.875rem;
+    }
+
+    .circle {
+        position: static;
+        margin-bottom: 2px;
+
+        box-sizing: border-box;
+    }
+
+    .net_yoyaku {
+        padding: 50px 0;
+    }
+
+    .net_yoyaku p span {
+        font-size: 0.875rem;
+        line-height: 2em;
+    }
+
+    .net_yoyaku_btn a {
+        width: 100%;
+    }
+
+    .net_yoyaku::after {
+        width: 100%;
+    }
+
+    .tel_yoyaku {
+        padding-bottom: 40px;
+    }
+
+    .tel_yoyaku_btn a {
+        width: 100%;
+    }
+
+    .fujinoi_info {
+        padding-top: 60px;
+    }
+
+    .info_text {
+        width: 100%;
+    }
+
+    .i_address {
+        padding: 10px 0;
+    }
+
+    .i_address,
+    .i_tel {
+        font-size: 0.875rem;
+    }
+
+    .i_tel {
+        padding-bottom: 30px;
+    }
+
+    .i_about_btn {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .i_about_btn a {
+        font-size: 1.25rem;
+        padding: 20px 0;
+    }
+
+    .i_image {
+        display: none;
+    }
+
+    /* contact */
+    .contact_bg {
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+        padding: 70px 45px;
+        box-sizing: border-box;
+    }
+
+    .contact_text {
+        font-size: 0.875rem;
+    }
+
+    .naiyo_btn {
+        padding: 45px 0 50px;
+        text-align: left;
+    }
+
+    .naiyo_btn div {
+        padding-bottom: 10px;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .name input {
+        width: 100%;
+    }
+
+    .address {
+        width: 100%;
+    }
+
+    .address input {
+        width: 100%;
+    }
+
+    .phone {
+        width: 100%;
+    }
+
+    .phone input {
+        width: 100%;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+    .email input {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content textarea {
+        width: 100%;
+    }
+
+    /* footer */
+
+    /* f_slider */
+    .f_slide {
+        max-width: 100%;
+    }
+
+    .f_slide_box {
+        max-width: 100%;
+    }
+
+    .f_slide_box .slide_l_btn {
+        left: 40px;
+    }
+
+    .f_slide_box .slide_r_btn {
+        right: 40px;
+    }
+
+    /* f_inner */
+    .f_inner {
+        width: 100%;
+    }
+
+    .restaurant_info {
+        flex-direction: column;
+        padding: 25px 0px 0px 35px;
+        box-sizing: border-box;
+    }
+
+    .info_box p {
+        padding-bottom: 5px;
+    }
+
+    .info_box .c_address {
+        padding-left: 26px;
+    }
+
+    .f_logo .pc {
+        display: none !important;
+    }
+
+    .f_logo .sp {
+        display: block !important;
+        width: 250px;
+        padding-bottom: 10px;
+    }
+
+    .f_logo .sp img {
+        width: 200px;
+    }
+
+    footer small {
+        width: 100%;
+        padding: 120px 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* toTop */
+    #toTop {
+        bottom: 60px;
+        right: 10px;
+    }
+
+}

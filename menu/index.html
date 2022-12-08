@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>お品書き | 日本橋 藤乃井</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="icon" href="../favicon.ico">
+    <script src="../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                auto: false,
+                slideWidth: 1260,
+                minSlides: 4,
+                maxSlides: 5,
+                moveSlides: 1,
+                slideMargin: 0,
+                pager: false,
+                pause: 3000,
+                speed: 1000,
+                nextSelector: '.slide_r_btn',
+                prevSelector: '.slide_l_btn',
+                touchEnabled: true,
+            });
+        });
+    </script>
+
+</head>
+<!-- MENU -->
+
+<body>
+    <!-- background -->
+    <div class="bg_red">
+    </div>
+
+    <!-- main_nav -->
+    <div class="h_btn"><span></span><span></span><span></span></div>
+    <nav class="main_nav">
+        <ul class="ds_f jc_sb">
+            <li class="home">
+                <a href="../index.html"><img src="../assets/images/common/nav_logo.svg" alt="ホーム"></a>
+            </li>
+            <li><a href="#" class="line">藤乃井について</a></li>
+            <li><a href="../menu/index.html" class="line">お品書き</a></li>
+            <li><a href="../takeout/index.html" class="line">テイクアウト・お取り寄せ</a></li>
+            <li><a href="#" class="line">ブログ</a></li>
+            <li class="yoyaku"><a href="../reserve/index.html"><span>ご予約・お問い合わせ</span></a></li>
+        </ul>
+    </nav>
+
+
+    <!-- header -->
+    <header>
+        <div class="main_v">
+            <img src="../assets/images/menu/menu_v.jpg" alt="お品書き">
+        </div>
+        <!-- headerここまで -->
+    </header>
+
+    <!-- main -->
+    <main>
+
+        <!-- menu -->
+        <section class="menu">
+            <div class="circle ds_f"></div>
+            <h2>お品書き<span>menu</span></h2>
+            <p class="tate_p">
+                季節の花が活けられ<br>
+                静謐な雰囲気の中で一品ずつ運ばれる料理<br>
+                茶味ある料理と華やかな料理が<br>
+                バランスよく一つの献立に盛り込まれ<br>
+                豊かな時間が過ぎていきます<br>
+                こだわりのすき焼き鍋は<br>
+                創業以来変わらぬぜいたくの味<br>
+                「藤乃井」心入れのひと時をご堪能ください。
+            </p>
+
+            <!-- btn_box -->
+            <div class="btn_box">
+                <div class="menu_btn ds_f jc_sb">
+                    <div class="tab_btn hiru_btn active ds_f jc_sb ">
+                        <img src="../assets/images/menu/sun_icon.png" alt="">
+                        <p>昼</p>
+                    </div>
+                    <div class="tab_btn yoru_btn ds_f jc_sb">
+                        <p>夜</p>
+                        <img src="../assets/images/menu/moon_icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- menu_box -->
+            <div class="menu_box">
+                <!-- hiru_menu -->
+                <div class="menu_tab active">
+                    <div class="hiru_menu ds_f jc_sb">
+                        <div class="sukiyaki_menu">
+                            <img src="../assets/images/menu/hiru_sukiyaki.jpg" alt="すき焼きコース">
+                            <div class="menu_p">
+                                <p class="title">【昼】すき焼きコース</p>
+                                <p>松　13,200円<br>
+                                    竹　11,000円<br>
+                                    梅　3,300円&emsp;
+                                    <span></span>※すべて税込み
+                                </p>
+                            </div>
+                        </div>
+                        <div class="kaiseki_menu">
+                            <img src="../assets/images/menu/hiru_kaiseki.jpg" alt="懐石コース">
+                            <div class="menu_p">
+                                <p class="title">【昼】懐石コース</p>
+                                <p>松　13,200円<br>
+                                    竹　11,000円<br>
+                                    梅　3,300円&emsp;※すべて税込み
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- yoru_menu -->
+                <div class="menu_tab">
+                    <div class="hiru_menu ds_f jc_sb">
+                        <div class="sukiyaki_menu">
+                            <img src="../assets/images/menu/yoru_sukiyaki.jpg" alt="すき焼きコース">
+                            <div class="menu_p">
+                                <p class="title">【夜】すき焼きコース</p>
+                                <p>松　17,600円<br>
+                                    竹　15,400円<br>
+                                    梅　13,200円&emsp;※すべて税込み
+                                </p>
+                            </div>
+                        </div>
+                        <div class="kaiseki_menu">
+                            <img src="../assets/images/menu/yoru_kaiseki.jpg" alt="懐石コース">
+                            <div class="menu_p">
+                                <p class="title">【夜】懐石コース</p>
+                                <p>松　17,600円<br>
+                                    竹　15,400円<br>
+                                    梅　13,200円&emsp;※すべて税込み
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- reserve -->
+        <div class="reserve">
+            <div class="reserve_btn">
+                <a href="../reserve/index.html">ご予約はこちら</a>
+            </div>
+            <div class="otoiawase">
+                <p>お電話でのお問い合わせ</p>
+                <P class="t_number">03-123-4566</P>
+            </div>
+        </div>
+
+        <!-- mainここまで -->
+    </main>
+
+    <!-- footer -->
+    <footer>
+
+        <!-- f_slide -->
+        <div class="f_slide">
+            <div class="f_slide_box">
+                <div class="slide_l_btn">
+                    <img src="../assets/images/common/slide_l_btn.png" alt="prev">
+                </div>
+                <ul class="bxslider">
+                    <li><img src="../assets/images/common/f_slide1.jpg" alt="image1"></li>
+                    <li><img src="../assets/images/common/f_slide2.jpg" alt="image2"></li>
+                    <li><img src="../assets/images/common/f_slide3.jpg" alt="image3"></li>
+                    <li><img src="../assets/images/common/f_slide4.jpg" alt="image4"></li>
+                    <li><img src="../assets/images/common/f_slide5.jpg" alt="image5"></li>
+                    <li><img src="../assets/images/common/f_slide1.jpg" alt="image6"></li>
+                    <li><img src="../assets/images/common/f_slide2.jpg" alt="image7"></li>
+                    <li><img src="../assets/images/common/f_slide3.jpg" alt="image8"></li>
+                    <li><img src="../assets/images/common/f_slide4.jpg" alt="image9"></li>
+                    <li><img src="../assets/images/common/f_slide5.jpg" alt="image10"></li>
+                </ul>
+                <div class="slide_r_btn">
+                    <img src="../assets/images/common/slide_r_btn.png" alt="next">
+                </div>
+            </div>
+        </div>
+
+        <!--f_inner -->
+
+        <div class="f_inner ds_f jc_sb">
+            <!-- restaurant_info -->
+            <div class="restaurant_info ds_f jc_sb">
+                <div class="f_logo">
+                    <a href="../index.html"><img src="../assets/images/common/logo_tate.svg" alt="日本橋 藤乃井"
+                            class="pc"></a>
+                    <a href="../index.html"><img src="../assets/images/common/logo_yoko.svg" alt="日本橋 藤乃井"
+                            class="sp"></a>
+                </div>
+                <div class="info_box">
+                    <p>〒103-0013東京都中央区日本橋人形町2-134-5</p>
+                    <div class="c_address">
+                        <p class="tel">03-123-4566</p>
+                        <p class="mail">contact@fujinoi.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- f_nav -->
+            <ul class="f_nav ds_f jc_sb">
+                <li><a href="#">藤乃井について</a></li>
+                <li><a href="#">お品書き</a></li>
+                <li><a href="../takeout/index.html">テイクアウト・お取り寄せ</a></li>
+                <li><a href="#">ブログ</a></li>
+                <li><a href="../reserve/index.html">ご予約・お問い合わせ</a></li>
+            </ul>
+        </div>
+
+        <!-- copyrights -->
+        <small>&copy; All Rights Reserved, Fujinoi Co.,Ltd </small>
+
+        <!-- toTop_btn -->
+        <div id="toTop">
+            <a href="#"><img src="../assets/images/common/totop.svg" alt="トップへ戻る"></a>
+        </div>
+
+        <!-- footerここまで -->
+    </footer>
+
+    <!-- スマホ用予約ボタン -->
+    <div class="footer_area">
+        <div class="footer_area_inner">
+            <a class="f_yoyaku_btn" href="../reserve/index.html">ご予約はこちら</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
